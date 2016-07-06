@@ -1,0 +1,17 @@
+{
+  "name": "savefilefromurl",
+  "version": "1.0.0",
+  "description": "Pass the url, path , and it will save the file with proper headers to the path",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Santosh Grampurohit <san_v500@yahoo.com> http://santoshgrampurohit.me",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "fs": "0.0.2",
+    "lodash": "^4.13.1",
+    "request": "^2.72.0"
+  }
+}
