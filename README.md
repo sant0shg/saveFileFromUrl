@@ -8,6 +8,14 @@ npm install savefilefromurl
 
 
 ## Usage
+It accepts url of the file, folder location to be saved, and the filename
+```
+save.saveFile(url,folder,filename)
+```
+It will return a promise
+
+## Example
+
 ```
 var save = require('savefilefromurl');
 var Promise = require('bluebird');
@@ -22,3 +30,4 @@ Promise.all(promise).then(function(success){
   ...
 })
 ```
+
