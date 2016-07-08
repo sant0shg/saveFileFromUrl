@@ -2,12 +2,13 @@
 npm install savefilefromurl
 
 ## Details
-*It will return a promise. On success of the promise, the file will be saved.
-*It checks the mime type of the file from the request headers, and according to the mime type, will store the file with the corresponding extension. 
-*For example, if you want to download any image from google books, where in you dont know the extension of the image(png or jpeg), you can just pass the url, and it will save the file
+* It will return a promise. On success of the promise, the file will be saved.
+* It checks the mime type of the file from the request headers, and according to the mime type, will store the file with the corresponding extension. 
+* For example, if you want to download any image from google books, where in you dont know the extension of the image(png or jpeg), you can just pass the url, and it will save the file
 
 
 ## Usage
+```
 var save = require('savefilefromurl');
 var Promise = require('bluebird');
 
@@ -20,4 +21,4 @@ Promise.all(promise).then(function(success){
 },function(error){
   ...
 })
-
+```
