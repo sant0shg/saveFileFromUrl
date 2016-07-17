@@ -24,21 +24,25 @@ var save = require('savefilefromurl');
 var Promise = require('bluebird');
 
 //url for a mark photo
+
 var url = "https://scontent-sin1-1.xx.fbcdn.net/v/t1.0-9/12208495_10102454385528521_4749095086285673716_n.jpg?oh=5828bbf762179e142d2bcb944c304d48&oe=57EA5B5C";
 var path = "/var/www/profile/";
 var filename = "picture";
-var promise = save.saveFile(url,path,filename)
+
+var promise = [save.saveFile(url,path,filename)];
 Promise.all(promise).then(function(success){
-  ...
+  
   //YOU CAN BROWSE THE JPEG FILE OF MARK IN /var/www/profile/picture.jpg
   
 },function(error){
-  ...
+  
+  //error
+  
 })
 ```  
-2. Similarly you can save profile photo from google plus or google books
+2. Similarly you can save profile photo from google plus or google books.
 
-```
+  ```
 var save = require('savefilefromurl');
 var Promise = require('bluebird');
 
